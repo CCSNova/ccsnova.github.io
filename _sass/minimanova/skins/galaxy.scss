@@ -5,6 +5,15 @@ $color-scheme-dark: true;
 @import "minimanova/skins/auto";
 
 /* Start background styling */
+html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 body {
     background: #000;
     color: #fff;
