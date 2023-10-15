@@ -47,5 +47,5 @@ hr {
 
 /* Start titlebar styling */
 .site-header {
-  border-top-color: #00ffff
+  border-top-color: #00ffff !important;
 }
