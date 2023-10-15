@@ -3,7 +3,7 @@ layout: page
 title: Archive
 ---
 
-{% for tag in site.tags %}
+{% for tag in site.catagoreys %}
   <h3>{{ tag | escape }}</h3>
   <ul>
     {%- for post in site.posts -%}
