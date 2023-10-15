@@ -43,4 +43,8 @@ defaults:
       path: ""
       type: post
     values:
-      tags: Other
+      tags: 
+        - Blog
+        - Development
+        - Story
+        - Other
