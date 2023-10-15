@@ -21,8 +21,6 @@
   <!-- end highlight.js support -->
 
   <script>
-    var svg = document.getElementById("waves")
-    var s = Snap(svg)
     var wave1 = Snap.select('#wave1')
     var wave2 = Snap.select('#wave2')
     var wave3 = Snap.select('#wave3')
@@ -30,13 +28,13 @@
     var wave2Points = wave2.node.getAttribute('d')
     var wave3Points = wave3.node.getAttribute('d')
     var to1 = function(){
-      wave1.animate({ d: wave1Points }, 1000, mina.easeinout, to2)
+      wave1.animate({ d: wave1Points }, 5000, mina.bounce, to2)
     }
     var to2 = function(){
-      wave1.animate({ d: wave2Points }, 1000, mina.easeinout, to3)
+      wave1.animate({ d: wave2Points }, 5000, mina.bounce, to3)
     }
     var to3 = function(){
-      wave1.animate({ d: wave3Points }, 1000, mina.easeinout, to1)
+      wave1.animate({ d: wave3Points }, 5000, mina.bounce, to1)
     }
     to1()
   </script>
