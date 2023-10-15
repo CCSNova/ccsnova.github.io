@@ -18,6 +18,12 @@ minima:
 
 rss: rss
 
+tags: 
+  - Blog
+  - Development
+  - Story
+  - Other
+
 kramdown:
   syntax_highlighter_opts:
     disable: true
@@ -35,8 +41,4 @@ defaults:
       path: ""
       type: post
     values:
-      tags: 
-        - Blog
-        - Development
-        - Story
-        - Other
+      tags: Other
