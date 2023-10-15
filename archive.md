@@ -8,7 +8,7 @@ title: Archive
   <ul>
     {%- for post in posts -%}
       {%- if post.tag = tag -%}
-        <li><a href="{{ post.url }}">{{ post.date | date: "%B %Y" }} - {{ post.title }}</a></li>
+        <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%m/%d/%Y" }}</a></li>
       {%- endif -%}
     {%- endfor -%}
   </ul>
