@@ -4,7 +4,7 @@ title: Archive
 ---
 
 {% for tag in site.tags %}
-  <h3>{{ tag }}</h3>
+  <h3>{{ tag | escape }}</h3>
   <ul>
     {%- for post in posts -%}
       {%- if post.tag == tag -%}
