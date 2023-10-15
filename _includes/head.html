@@ -15,7 +15,29 @@
   <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
 
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
+
+  <script>
+    var svg = document.getElementById("waves")
+    var s = Snap(svg)
+    var wave1 = Snap.select('#wave1')
+    var wave2 = Snap.select('#wave2')
+    var wave3 = Snap.select('#wave3')
+    var wave1Points = wave1.node.getAttribute('d')
+    var wave2Points = wave2.node.getAttribute('d')
+    var wave3Points = wave3.node.getAttribute('d')
+    var to1 = function(){
+      wave1.animate({ d: wave1Points }, 1000, mina.easeinout, to2)
+    }
+    var to2 = function(){
+      wave1.animate({ d: wave2Points }, 1000, mina.easeinout, to3)
+    }
+    var to3 = function(){
+      wave1.animate({ d: wave3Points }, 1000, mina.easeinout, to1)
+    }
+    toSimple()
+  </script>
 </head>

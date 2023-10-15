@@ -6,43 +6,13 @@ $color-scheme-dark: true;
 
 /* Start background styling */
 body {
-    background: linear-gradient(0deg, #8E2DE2, #4A00E0);
-    animation: gradient 4s linear infinite;
+    background: #000;
+    color: #fff;
 }
 
-body::after {
+#waves {
     position: absolute;
+    z-index: -50;
+    left: 0;
     bottom: 0;
-    width: 100%;
-    height: 30%;
-    background-color: #8E2DE2;
-    animation: wave 4s ease-in-out infinite;
-}
-
-@keyframes wave {
-    0% {
-        transform: scaleY(0.9);
-    }
-
-    50% {
-        transform: scaleY(1.1);
-    }
-
-    100% {
-        transform: scaleY(0.9);
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background: linear-gradient(0deg, #8E2DE2, #4A00E0);
-    }
-
-    50% {
-        background: linear-gradient(0deg, #4A00E0, #8E2DE2);
-    }
-
-    100% {
-        background: linear-gradient(0deg, #8E2DE2, #4A00E0);
-    }
 }
