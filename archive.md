@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+titletop: Archive
 ---
 
 {% for tag in site.catagoreys %}
