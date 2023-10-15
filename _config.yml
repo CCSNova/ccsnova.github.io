@@ -18,7 +18,11 @@ youtube_username: "ccsnova"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minimanova"
+#theme: "minimanova"
+
+minima:
+  skin:
+    - galaxy
 
 rss: rss
 
