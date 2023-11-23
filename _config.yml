@@ -23,6 +23,7 @@ catagoreys:
   - Development
   - Story
   - Other
+  - Guide
 
 kramdown:
   syntax_highlighter_opts:

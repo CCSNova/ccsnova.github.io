@@ -1,19 +1,15 @@
 ---
 layout: page
-title: Archive
-titletop: Archive
-permalink: /archive/
+title: Guides
+titletop: Guides
+permalink: /guides/
 ---
 
-{% for tag in site.catagoreys %}
-  <h3>{{ tag | escape }}</h3>
-  <ul>
+<h3>Guides</h3>
+<ul>
     {%- for post in site.posts -%}
       {%- if post.cat == tag -%}
-      {%- if post.cat != "Guide" -%}
         <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%d/%m/%Y" }}</a></li>
       {%- endif -%}
-      {%- endif -%}
     {%- endfor -%}
-  </ul>
-{% endfor %}
+</ul>
