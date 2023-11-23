@@ -7,13 +7,12 @@ $color-scheme-dark: true;
 /* Start background styling */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
-    border-left: #fff solid 3px;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* Handle */
