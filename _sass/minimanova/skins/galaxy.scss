@@ -5,13 +5,25 @@ $color-scheme-dark: true;
 @import "minimanova/skins/auto";
 
 /* Start background styling */
-html {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-html::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-left: #fff solid 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00ffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00cccc;
 }
 
 body {
