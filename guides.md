@@ -5,7 +5,6 @@ titletop: Guides
 permalink: /guides/
 ---
 
-<h3>Guides</h3>
 <ul>
     {%- for post in site.posts -%}
       {%- if post.cat == "Guide" -%}
