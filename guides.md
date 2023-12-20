@@ -6,8 +6,8 @@ permalink: /guides/
 ---
 
 <ul>
-    {%- for post in site.guides -%}
-      {%- if post.cat == "Guide" -%}
+    {%- for post in site.posts -%}
+      {%- if post.categories[0] == "Guide" -%}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {%- endif -%}
     {%- endfor -%}
