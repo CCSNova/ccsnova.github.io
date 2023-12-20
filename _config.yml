@@ -19,10 +19,10 @@ minima:
 rss: rss
 
 catagoreys: 
-  - Blog
-  - Development
-  - Story
-  - Other
+  - blog
+  - development
+  - story
+  - other
 
 kramdown:
   syntax_highlighter_opts:
@@ -42,4 +42,5 @@ defaults:
       type: post
     values:
       tags: Other
-permalink: /posts/:id/
+
+permalink: /posts/:slug/
