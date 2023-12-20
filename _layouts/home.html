@@ -11,9 +11,9 @@ layout: base
 
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts | sort: "id" | reverse %}
+    {% assign posts = paginator.posts | sort: "id" %}
   {% else %}
-    {% assign posts = site.posts | sort: "id" | reverse %}
+    {% assign posts = site.posts | sort: "id" %}
   {% endif %}
 
 
