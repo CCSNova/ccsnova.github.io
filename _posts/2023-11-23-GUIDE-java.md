@@ -1,5 +1,8 @@
 ---
 title: Java Guide
+slug: java-guide
+date: 2023-11-23
+category: guide
 ---
 ## Java Guide
 Welcome to my large(ish) java guide!
