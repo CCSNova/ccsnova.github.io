@@ -1,8 +1,5 @@
 ---
 title: Java Guide
-date: 2023-11-23
-cat: Guide
-permalink: /guides/java/
 ---
 ## Java Guide
 Welcome to my large(ish) java guide!

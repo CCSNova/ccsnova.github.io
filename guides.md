@@ -6,9 +6,9 @@ permalink: /guides/
 ---
 
 <ul>
-    {%- for post in site.posts -%}
+    {%- for post in site.guides -%}
       {%- if post.cat == "Guide" -%}
-        <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%d/%m/%Y" }}</a></li>
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {%- endif -%}
     {%- endfor -%}
 </ul>
