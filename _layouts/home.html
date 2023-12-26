@@ -23,7 +23,14 @@ layout: base
       {%- for post in posts -%}
       {%- if post.categories[0] != "guide" -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {% capture author %}
+          {% post.author %}
+            {{ post.author }}
+          {% else %}
+            {{ site.author }}
+          {% endif %}
+        {% endcapture %}
+        <span class="post-meta">{{ post.date | date: date_format }} - {{ author }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.categories[0] | capitalize }} - {{ post.title | escape }}
