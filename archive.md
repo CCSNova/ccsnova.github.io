@@ -6,7 +6,7 @@ permalink: /archive/
 ---
 
 {% for tag in site.catagoreys %}
-{%- if tag != "Guide" -%}
+{%- if tag != "guide" -%}
   <h3>{{ tag | escape | capitalize }}</h3>
   <ul>
     {%- for post in site.posts -%}
