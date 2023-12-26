@@ -24,7 +24,7 @@ layout: base
       {%- if post.categories[0] != "guide" -%}
       <li>
         {% capture author %}
-          {% post.author %}
+          {% if post.author %}
             {{ post.author }}
           {% else %}
             {{ site.author }}
